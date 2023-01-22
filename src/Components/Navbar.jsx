@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import CreatePost from "./CreatePost";
+import { Backdrop } from "@mui/material";
 
 const Navbar = () => {
     const [openModal, setOpenModal] = useState(true);
 
     return (
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark tw-fixed w-100">
-            <CreatePost openModal={openModal} setOpenModal={setOpenModal}/>
+            <Backdrop
+                sx={{
+                    color: "#fff",
+                    zIndex: 0,
+                }}
+                open={openModal}
+                onClick={() => setOpenModal(false)}
+            />
+
+            <CreatePost openModal={openModal} setOpenModal={setOpenModal} />
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     GamerXForum
