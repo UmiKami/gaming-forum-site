@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
-const ForumThread = () => {
+const ForumThread = ({postTitle, postSummary}) => {
+
+
   return (
       <div className="bg-dark text-light tw-flex tw-justify-between tw-items-center py-2 mb-3 px-3 rounded">
           <div className="thread-headers tw-flex tw-flex-col tw-w-[85%]">

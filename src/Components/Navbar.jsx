@@ -2,13 +2,10 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <nav
-            className="navbar navbar-expand-lg bg-dark navbar-dark tw-fixed w-100"
-        >
+        <nav className="navbar navbar-expand-lg bg-dark navbar-dark tw-fixed w-100">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     GamerXForum
-                    
                 </a>
 
                 <button
@@ -22,7 +19,7 @@ const Navbar = () => {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-            
+
                 <div
                     className="collapse navbar-collapse justify-content-end"
                     id="navbarNavAltMarkup"
