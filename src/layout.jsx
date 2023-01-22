@@ -10,7 +10,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const Layout = () => {
   return (
-      <main className='tw-h-screen tw-bg-[#123344]'>
+      <main className="tw-min-h-screen tw-bg-[#3A0CA3]">
           <Navbar />
           <Routes>
               <Route path="/" element={<Home />} />
