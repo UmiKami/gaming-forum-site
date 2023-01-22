@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import CreatePost from "./CreatePost";
 
 const Navbar = () => {
+    const [openModal, setOpenModal] = useState(true);
+
     return (
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark tw-fixed w-100">
+            <CreatePost openModal={openModal} setOpenModal={setOpenModal}/>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     GamerXForum
@@ -25,7 +29,12 @@ const Navbar = () => {
                     id="navbarNavAltMarkup"
                 >
                     <div className="navbar-nav">
-                        <div className="btn btn-primary">Create New Post</div>
+                        <div
+                            className="btn btn-primary"
+                            onClick={() => setOpenModal(true)}
+                        >
+                            Create New Post
+                        </div>
                         <a
                             className="nav-link active"
                             aria-current="page"
