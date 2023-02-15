@@ -3,7 +3,7 @@ import CreatePost from "./CreatePost";
 import { Backdrop } from "@mui/material";
 
 const Navbar = ({setAudioURL, setVideoURL, setImgURL}) => {
-    const [openModal, setOpenModal] = useState(true);
+    const [openModal, setOpenModal] = useState(false);
 
     return (
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark tw-fixed w-100">

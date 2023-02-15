@@ -63,9 +63,9 @@ const CreatePost = ({ openModal, setOpenModal, setAudioURL, setVideoURL, setImgU
 
     return (
         <div
-            className={`post-modal tw-bg-[#ffff] tw-absolute tw-top-[125%] tw-left-[50%] col-12 col-sm-11 col-lg-10 col-xl-9 col-xxl-7 tw-h-[${
-                !openModal ? "0" : "40rem"
-            }] tw-overflow-hidden tw-transition-all tw-ease-in-out tw-delay-50 tw--translate-x-[50%] transform-gpu rounded`}
+            className={`post-modal tw-bg-[#ffff] tw-absolute tw-top-[125%] tw-left-[50%] col-12 col-sm-11 col-lg-10 col-xl-9 col-xxl-7 ${
+                !openModal ? "tw-h-[0]" : "tw-h-[40rem]"
+            } tw-overflow-hidden tw-transition-all tw-ease-in-out tw-delay-50 tw--translate-x-[50%] transform-gpu rounded`}
         >
             <div className="d-flex justify-content-center py-3 mb-3 mr-0 tw-text-xl">
                 <div className="d-flex align-items-center justify-content-between col-11">
