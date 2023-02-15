@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CreatePost from "./CreatePost";
 import { Backdrop } from "@mui/material";
 
-const Navbar = () => {
+const Navbar = ({setAudioURL, setVideoURL, setImgURL}) => {
     const [openModal, setOpenModal] = useState(true);
 
     return (
@@ -16,7 +16,7 @@ const Navbar = () => {
                 onClick={() => setOpenModal(false)}
             />
 
-            <CreatePost openModal={openModal} setOpenModal={setOpenModal} />
+            <CreatePost openModal={openModal} setOpenModal={setOpenModal} setAudioURL={setAudioURL} setImgURL={setImgURL} setVideoURL={setVideoURL}/>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     GamerXForum
